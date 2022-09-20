@@ -21,6 +21,7 @@ namespace ExamenZlobinov
             //Ввод данных в текстовый файл, чтобы вывести их на экран
           public void vvod()
           {
+                //При необходимости стоит создать его в папке Debug
             StreamReader vvod = new StreamReader("vvod.txt");
             while (!vvod.EndOfStream)
             {
