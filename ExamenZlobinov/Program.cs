@@ -60,7 +60,7 @@ namespace ExamenZlobinov
             test test = new test();
             test.vvod();
             test.vivod();
-            Console.WriteLine("\nДля вывода данных на экран из файла нужно ввести текст в файл vvod.txt\n");
+            Console.WriteLine("\nДля вывода данных на экран из файла нужно ввести текст в файл vvod.txt (или создать его)\n");
             //Сумма чисел выводится в Otvet.txt
             Console.Write("Введите a: ");
             int a = Convert.ToInt32(Console.ReadLine());
