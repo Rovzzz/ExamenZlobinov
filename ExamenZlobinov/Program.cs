@@ -38,6 +38,13 @@ namespace ExamenZlobinov
             File.WriteAllLines("test.csv", lines);
           }
     }
+        
+        /// <summary>
+        /// Метод для Unit теста
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
 
     //Метод суммы для unit теста
     public int sum(int a, int b)
