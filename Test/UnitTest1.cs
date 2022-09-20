@@ -12,6 +12,7 @@ namespace Test
         [TestMethod]
         public void TestMethod1()
         {
+            //Проверка суммы чисел
             int a = 2;
             int b = 2;
             int otv = 4;

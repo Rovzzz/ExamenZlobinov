@@ -30,7 +30,7 @@ namespace ExamenZlobinov
             vvod.Close();
           }
 
-           //Вывод введенных данных в csv
+           //Вывод введенных данных в csv, введенные в vvod.txt
           public void vivod()
           {
             string[] lines = new string[] { s };
@@ -48,16 +48,19 @@ namespace ExamenZlobinov
 
     static void Main(string[] args)
         {
+            //Объявление методов для работы с файлами
             test test = new test();
             test.vvod();
             test.vivod();
-
+            Console.WriteLine("\nДля вывода данных на экран из файла нужно ввести текст в файл vvod.txt\n");
+            //Сумма чисел выводится в Otvet.txt
             Console.Write("Введите a: ");
             int a = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите b: ");
             int b = Convert.ToInt32(Console.ReadLine());
             int c = a + b;
 
+            //Создание текстовых файлов
             TextWriterTraceListener[] listeners = new TextWriterTraceListener[]
             {
                 new TextWriterTraceListener("Debug.txt"),
@@ -65,7 +68,9 @@ namespace ExamenZlobinov
                  new TextWriterTraceListener(Console.Out)
             };
             Debug.Listeners.AddRange(listeners);
+            //Вывод информации в debug
             Debug.WriteLine($"Ваш ответ: {c}");
+            Debug.WriteLine("Созданы файлы Debug.txt и Otvet.txt. Вся информация записана.");
             Debug.Flush();
             Console.ReadKey();
         }
